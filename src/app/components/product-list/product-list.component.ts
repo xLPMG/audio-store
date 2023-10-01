@@ -17,7 +17,7 @@ export class ProductListComponent implements OnInit, OnChanges {
 
   ngOnChanges(): void {
     if(this.category){
-      this.products = products.filter((p) => p.category === this.category);
+      this.products = products.filter((p) => p.category.some(i => { return (i === this.category) ? true : false;}));
     } else {
       this.products = [...products];
     }

@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class InfotabComponent {
   title = 'AudioStore';
+  category = 'new';
 }
