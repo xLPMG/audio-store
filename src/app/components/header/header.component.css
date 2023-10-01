@@ -1,5 +1,9 @@
-* {
-    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+body {
+    margin: 0;
+}
+
+mat-icon {
+    vertical-align: middle;
 }
 
 nav {
@@ -13,13 +17,13 @@ nav {
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .nav-content a {
     display: block;
     font-size: 14px;
-    line-height: 32px;
+    line-height: 44px;
     text-decoration: none;
     transition: all 0.3s;
     color: var(--h1-color);
@@ -51,12 +55,22 @@ nav {
 .bar {
     height: 1px;
     width: 18px;
-    background: black;
+    background: white;
     transition: 0.5s;
+}
+
+.search-icon {
+    cursor: pointer;
+    transition: all 0.3s;
+    filter: invert(100%);
 }
 
 @media (max-width: 768px) {
     .show {
+        background-color: #000000;
+    }
+
+    nav {
         background-color: #000000;
     }
 
@@ -97,6 +111,19 @@ nav {
     .nav-icon {
         order: 1;
         display: grid;
+    }
+
+    .logo {
+        order: 2;
+    }
+
+    mat-icon {
+        color: white;
+    }
+
+    .search-icon {
+        order: 3;
+        filter: invert(0%);
     }
 }
 
