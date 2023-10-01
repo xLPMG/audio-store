@@ -1,0 +1,31 @@
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 2vw;
+}
+
+.name {
+    padding: 0px;
+    margin: 0px;
+    color: var(--text-black);
+    font-weight: bold;
+    font-size: calc(18px + 0.14vw);
+}
+
+.description {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+    color: var(--text-grey);
+    font-size: calc(14px + 0.1vw);
+}
+
+.price {
+    color: var(--text-black);
+    font-size: calc(17px + 0.14vw);
+}
+
+img {
+    width: 20vw;
+    margin: auto;
+}

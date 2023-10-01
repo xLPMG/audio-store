@@ -9,24 +9,24 @@ export interface Product {
   export const products = [
     {
       id: 1,
-      name: 'headphones',
-      price: 799,
+      name: 'Bose QuietComfort® Ultra Headphones',
+      price: 499.95,
       category: 'headphones',
-      description: 'headphone'
+      description: ''
     },
     {
       id: 2,
-      name: 'Speaker',
-      price: 699,
-      category: 'speakers',
-      description: 'speaker'
+      name: 'Bose Noise Cancelling Headphones 700',
+      price: 399.95,
+      category: 'headphones',
+      description: ''
     },
     {
       id: 3,
-      name: 'microphone',
-      price: 299,
-      category: 'microphones',
-      description: 'mic'
+      name: 'Bose QuietComfort® 45 Headphones',
+      price: 349.95,
+      category: 'headphones',
+      description: ''
     }
   ];
   

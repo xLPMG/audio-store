@@ -27,11 +27,12 @@
 .productBox {
     padding-left: 10px;
     padding-right: 10px;
+    position: relative;
 
     margin: 10px;
 
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 360px;
 
     background-color: white;
 
@@ -43,11 +44,31 @@
 }
 
 .name {
-    padding-top: 8px;
-    color: var(--text-gray);
-    font-size: calc(10px + 0.2vw);
+    padding: 0px;
+    margin: 0px;
+    color: var(--text-black);
+    font-weight: bold;
+    font-size: calc(18px + 0.14vw);
 }
 
 .description {
-    font-size: calc(16px + 0.3vw);
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+    color: var(--text-grey);
+    font-size: calc(14px + 0.1vw);
+}
+
+.price {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    
+    color: var(--text-black);
+    font-size: calc(17px + 0.14vw);
+}
+
+img {
+    width: 100%;
+    margin: auto;
 }

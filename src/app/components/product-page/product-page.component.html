@@ -1,7 +1,8 @@
-<h2>Product Details</h2>
-
+<div class="container">
 <div *ngIf="product">
-  <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
-  <p>{{ product.description }}</p>
+  <p class="name">{{ product.name }}</p>
+  <p class="description" *ngIf="product.description">{{product.description}}</p>
+  <p class="price" *ngIf="product.price">{{product.price}} €</p>
+  <img [src]="'/assets/images/products/'+product.id+'-1.png'" alt="image">
+</div>
 </div>
