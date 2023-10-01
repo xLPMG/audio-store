@@ -24,11 +24,11 @@ body {
 }
 
 .textDark {
-    color: var( --h1-color);
+    color: var(--text-black);
 }
 
 .textLight {
-    color: var( --h2-color);
+    color: var(--text-gray);
 }
 
 .animate-character

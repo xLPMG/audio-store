@@ -1,8 +1,9 @@
 /* Application-wide Styles */
 :root {
     --bg-color:rgb(245, 245, 247);
-    --h1-color:rgb(29, 29, 31);
-    --h2-color:rgb(111, 110, 115);
+    --text-black:rgb(29, 29, 31);
+    --text-gray:rgb(111, 110, 115);
+    --text-white: rgb(255, 255, 255);
 }
 * {
   font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -11,7 +12,7 @@
 html {background-color: var(--bg-color)}
 
 h1 {
-    color: var(--h1-color);
+    color: var(--text-black);
     font-size: 250%;
 }
   h2, h3 {

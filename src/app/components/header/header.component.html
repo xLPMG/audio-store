@@ -1,7 +1,7 @@
 <body>
     <nav> 
         <div class="nav-content">
-            <a href="" class="logo">
+            <a [routerLink]="['/']" class="logo">
                 <mat-icon>hearing</mat-icon>
             </a>
             
@@ -11,10 +11,9 @@
             </div>
 
             <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Headphones</a>
-                <a href="#">Speaker</a>
-                <a href="#">Microphones</a>
+                <a [routerLink]="['categories/headphones']">Headphones</a>
+                <a [routerLink]="['categories/speakers']">Speaker</a>
+                <a [routerLink]="['categories/microphones']">Microphones</a>
                 <a href="#">Contact</a>
                 <a href="#">Login</a>
             </div>
