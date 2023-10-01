@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+:root {
+    --bg-color:rgb(245, 245, 247);
+    --h1-color:rgb(29, 29, 31);
+    --h2-color:rgb(111, 110, 115);
+}
+* {
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+html {background-color: var(--bg-color)}
+
+h1 {
+    color: var(--h1-color);
+    font-size: 250%;
+}
+  h2, h3 {
+    color: #444;
+    font-weight: lighter;
+  }

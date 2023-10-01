@@ -1,0 +1,12 @@
+.intro {
+    display: inline;
+}
+
+.title {
+    font-size: 250%;
+}
+
+.subtext {
+    font-size: 180%;
+    color: var( --h2-color);
+}
