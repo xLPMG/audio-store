@@ -28,3 +28,16 @@
     font-size: 2rem;
     color: var(--text-black);
 }
+
+.cart-item.buttons {
+    float:right;
+}
+
+.cart-item button {
+    margin: 5px;
+}
+
+mat-icon {
+    display: flex;
+    align-items: center;
+}

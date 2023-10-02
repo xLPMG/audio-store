@@ -1,6 +1,11 @@
-.container {
-    width: 80%;
+.area {
+    width: 80vw;
     margin: auto;
+}
+
+.container {
+    width: fit-content;
+    right: 0;
     margin-top: 2vw;
 }
 
@@ -28,4 +33,20 @@
 img {
     width: 20vw;
     margin: auto;
+}
+
+.container button {
+    padding: 0;
+    border: none;
+    background: none;
+    margin: 1em;
+    float: right;
+}
+
+.container button:hover {
+    opacity: 0.6;
+}
+
+mat-icon {
+    vertical-align: middle;
 }

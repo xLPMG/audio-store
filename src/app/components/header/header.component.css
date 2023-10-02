@@ -66,6 +66,11 @@ a:hover {
     margin-left: 2rem;
 }
 
+.space {
+    height: 1em;
+    width: 100vw;
+}
+
 /* responsive design */
 @media(max-width: 800px) {
     .nav-links {

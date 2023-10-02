@@ -5,8 +5,10 @@
     <span>{{ item.key.name }}</span>
     <span>{{ item.value }}</span>
     <span>{{ getTotalOfItem(item.key, item.value) | currency }}</span>
-    <button (click)="increaseItem(item.key)"><mat-icon>add</mat-icon></button>
-    <button (click)="decreaseItem(item.key)"><mat-icon>remove</mat-icon></button>
+    <div class="buttons">
+        <button (click)="increaseItem(item.key)"><mat-icon>add</mat-icon></button>
+        <button (click)="decreaseItem(item.key)"><mat-icon>remove</mat-icon></button>
+    </div>
 </div>
 <p class="total">Total: {{getTotal() | currency}}</p>
 </div>
