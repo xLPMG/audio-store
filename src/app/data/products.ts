@@ -69,7 +69,7 @@ export interface Product {
       name: 'Teufel Theater 500',
       brand: 'Teufel',
       price: 699.99,
-      category: ['speakers'],
+      category: ['speakers','new'],
       description: ''
     },
     {
@@ -85,7 +85,7 @@ export interface Product {
       name: 'Teufel AIRY SPORTS TWS',
       brand: 'Teufel',
       price: 699.99,
-      category: ['earphones'],
+      category: ['earphones','new'],
       description: ''
     },
     {

@@ -5,8 +5,13 @@ body {
 
 .box {
     width: 80%;
+    height: 100vh;
     margin: auto;
     padding-top: 2em;
+}
+
+.about {
+    left:0;
 }
 
 .title {
