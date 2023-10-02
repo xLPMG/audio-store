@@ -2,7 +2,8 @@
 <div *ngIf="product">
   <p class="name">{{ product.name }}</p>
   <p class="description" *ngIf="product.description">{{product.description}}</p>
-  <p class="price" *ngIf="product.price">{{product.price}} €</p>
+  <p class="price" *ngIf="product.price">{{ product.price | currency }}</p>
+  <button type="button" (click)="addToCart(product)">Buy</button>
   <img [src]="'/assets/images/products/'+product.id+'-1.png'" alt="image">
 </div>
 </div>

@@ -13,6 +13,7 @@ import { InfotabComponent } from './components/infotab/infotab.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductPageComponent } from './components/product-page/product-page.component';
 import { CategoryPageComponent } from './components/category-page/category-page.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CategoryPageComponent } from './components/category-page/category-page.
     InfotabComponent,
     ProductListComponent,
     ProductPageComponent,
-    CategoryPageComponent
+    CategoryPageComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +32,7 @@ import { CategoryPageComponent } from './components/category-page/category-page.
       { path: '', component: InfotabComponent },
       { path: 'products/:productId', component: ProductPageComponent },
       { path: 'categories/:category', component: CategoryPageComponent },
+      { path: 'cart', component: CartComponent },
     ]),
     BrowserAnimationsModule,
     MatToolbarModule,
