@@ -7,5 +7,16 @@ import { Component, NgModule } from '@angular/core';
 })
 
 export class HeaderComponent {
+ public openDropDown(): void {
 
+  const toggleBtnIcon = document.querySelector('.toggle_btn mat-icon');
+  const dropDownMenu = document.querySelector('.dropdown-menu');
+
+if(dropDownMenu){
+  dropDownMenu.classList.toggle('open');
+  const isOpen = dropDownMenu.classList.contains('open');
+  if(toggleBtnIcon){
+    toggleBtnIcon.innerHTML = isOpen ? 'close' : 'menu';
+  }
+ }}
 }

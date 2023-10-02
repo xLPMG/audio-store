@@ -9,10 +9,16 @@ import { products, Product } from '../../data/products';
 })
 export class ProductListComponent implements OnInit, OnChanges {
   @Input() category: string | null | undefined = null;
+  @Input() shouldScroll: string | null | undefined = null;
   products: Array<Product> | undefined;
 
   ngOnInit(): void {
     this.ngOnChanges();
+
+    if(this.shouldScroll==="true"){
+      const productList = document.querySelector('.productList');
+      productList?.classList.add('scroll');
+    }
   }
 
   ngOnChanges(): void {

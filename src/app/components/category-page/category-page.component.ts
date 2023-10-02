@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CategoryPageComponent implements OnInit {
 
   category: string | null | undefined = null;
+  shouldScroll = "false";
 
   constructor(private route: ActivatedRoute) { }
 
