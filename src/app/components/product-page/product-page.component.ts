@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { Product, products } from '../../data/products';
+import { Product } from '../../data/product';
+import { ProductsService } from 'src/app/services/products.service';
 import { CartService } from '../../services/cart.service';
+import { Observable, map, find } from 'rxjs';
 
 @Component({
   selector: 'app-product-page',
@@ -11,16 +13,19 @@ import { CartService } from '../../services/cart.service';
 })
 export class ProductPageComponent implements OnInit {
 
-  product: Product | undefined;
+  product: Observable<Product> | undefined;
+  products: Observable<Product[]> | undefined;
 
   constructor(
     private route: ActivatedRoute,
-    private cartService: CartService) { }
+    private cartService: CartService,
+    private productsService: ProductsService) { }
 
   ngOnInit() {
     const routeParams = this.route.snapshot.paramMap;
     const productIdFromRoute = Number(routeParams.get('productId'));
-    this.product = products.find(product => product.id === productIdFromRoute);
+    this.products = this.productsService.getProducts();
+    this.product = this.products.pipe(map(products => products.find(product => product.id === productIdFromRoute))) as Observable<Product>;
   }
 
   addToCart(product: Product) {

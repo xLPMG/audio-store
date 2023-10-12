@@ -1,6 +1,6 @@
 <div class="area">
   <div class="container">
-    <div *ngIf="product">
+    <div *ngIf="product | async as product">
       <div class="description">
         <p class="name">{{ product.name }}</p>
         <p class="description" *ngIf="product.description">{{product.description}}</p>

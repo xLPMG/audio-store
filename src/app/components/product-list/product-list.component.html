@@ -1,5 +1,6 @@
 <div class="productList">
-    <div *ngFor="let product of products">
+    <p *ngIf="!products">Loading data ...</p>
+    <div *ngFor="let product of products | async">
         <div class="productBox" [routerLink]="['/products', product.id]">
             <img [src]="'/assets/images/products/'+product.id+'-1.png'" alt="image">
             <p class="name">{{ product.name }}</p>
