@@ -1,0 +1,37 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    width: 100vw; 
+    height: 50vh;
+}
+
+img {
+    width: 100vw; 
+    height: 50vh;
+    object-fit: cover;
+}
+
+.title {
+    position: absolute;
+    left: 10vw;
+    top: 20vh;
+    color: black;
+
+    font-weight: 900;
+    font-size: calc(12px + 1.8vw);
+}
+
+.subtitle {
+    position: absolute;
+    top: 20vh;
+    right: 10vw;
+    color: black;
+
+    font-size: calc(10px + 1vw);
+    font-weight: 700;
+}

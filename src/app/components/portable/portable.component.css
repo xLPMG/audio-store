@@ -1,0 +1,43 @@
+.container {
+    height: auto;
+    width: 100vw;
+    background-color: black;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+}
+
+.textbox {
+    color: white;
+    margin: auto;
+    width: 50%;
+}
+
+.title {
+    text-align: center;
+    padding: 1vw;
+    font-weight: 900;
+    font-size: calc(12px + 2vw);
+}
+
+.subtext {
+    text-align: center;
+    font-size: calc(10px + 1vw);
+    padding: 1vw;
+    padding-top: 0;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-white);
+    font-weight: bold;
+}
+
+a:hover {
+    opacity: 0.6;
+}

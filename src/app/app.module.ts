@@ -18,6 +18,16 @@ import { ProductPageComponent } from './components/product-page/product-page.com
 import { CategoryPageComponent } from './components/category-page/category-page.component';
 import { CartComponent } from './components/cart/cart.component';
 import { AboutComponent } from './components/about/about.component';
+import { CreativityComponent } from './components/creativity/creativity.component';
+import { SportsComponent } from './components/sports/sports.component';
+import { PilotsComponent } from './components/pilots/pilots.component';
+import { PortableComponent } from './components/portable/portable.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { WorkplaceComponent } from './components/workplace/workplace.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { HeadphonesComponent } from './components/categories/headphones/headphones.component';
+import { EarphonesComponent } from './components/categories/earphones/earphones.component';
+import { SpeakersComponent } from './components/categories/speakers/speakers.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +38,17 @@ import { AboutComponent } from './components/about/about.component';
     ProductPageComponent,
     CategoryPageComponent,
     CartComponent,
-    AboutComponent
+    AboutComponent,
+    CreativityComponent,
+    SportsComponent,
+    PilotsComponent,
+    PortableComponent,
+    FooterComponent,
+    WorkplaceComponent,
+    ContactComponent,
+    HeadphonesComponent,
+    EarphonesComponent,
+    SpeakersComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +56,12 @@ import { AboutComponent } from './components/about/about.component';
     RouterModule.forRoot([
       { path: '', component: InfotabComponent },
       { path: 'products/:productId', component: ProductPageComponent },
+
+      { path: 'categories/headphones', component: HeadphonesComponent },
+      { path: 'categories/earphones', component: EarphonesComponent },
+      { path: 'categories/speakers', component: SpeakersComponent },
       { path: 'categories/:category', component: CategoryPageComponent },
+
       { path: 'cart', component: CartComponent },
     ]),
     HttpClientModule,

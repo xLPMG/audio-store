@@ -1,0 +1,16 @@
+.container {
+    height: auto;
+    width: 100vw;
+    background-color: black;
+}
+
+.title {
+    color: white;
+    text-align: center;
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    font-weight: 900;
+    font-size: calc(12px + 3vw);
+}

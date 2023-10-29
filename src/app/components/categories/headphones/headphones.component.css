@@ -1,0 +1,43 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.textbox {
+    width: 40vw;
+    height: 100%;
+    margin-left: auto; 
+    margin-right: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header {
+    text-align: center;
+    width: 100vw; 
+    height: 60vh;
+
+    background-image: url(/assets/images/headphones.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ; 
+    background-position: center center;
+}
+
+.title {
+    text-align: right;
+    color: white;
+    padding-top: 10vh;
+    padding-right: 5vw;
+
+    font-weight: 900;
+    font-size: calc(12px + 1.8vw);
+}
+
+.subtitle {
+    text-align: right;
+    color: white;
+    padding-right: 5vw;
+
+    font-size: calc(10px + 1vw);
+    font-weight: 700;
+}

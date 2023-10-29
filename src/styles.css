@@ -19,3 +19,10 @@ h1 {
     color: #444;
     font-weight: lighter;
   }
+  
+  html,body
+  {
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+  }
