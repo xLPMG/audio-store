@@ -96,7 +96,12 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/audio-store/",
+            "name": "AudioStore",
+            "email": "xxlpmghdxx@gmail.com"
+          }
         }
       }
     }
