@@ -1,6 +1,6 @@
 # AudioStore
 
-Check out the [finished web shop](xlpmg.github.io/audio-store/)
+Check out the [finished web shop](https://xlpmg.github.io/audio-store/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
 
