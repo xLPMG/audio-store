@@ -59,7 +59,7 @@
     right: 10px;
     
     color: var(--text-black);
-    font-size: calc(17px + 0.14vw);
+    font-size: calc(22px + 0.2vw);
 }
 
 img {
@@ -70,6 +70,33 @@ img {
 @media only screen and (max-width: 710px) {
     .productBox {
         width: calc(40vw - 35px);
-        height: calc(50vw + 35px);
+        min-width: 68px;
+        height: calc(45vw + 95px);
+    }
+
+    .productList {
+        gap: 10px;
+    }
+
+    .name {
+        font-size: calc(10px + 2vw);
+    }
+
+    .price {
+        font-size: calc(20px + 0.14vw);
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .name {
+        font-size: calc(10px + 0.16vw);
+    }
+
+    .productBox {
+    max-height: 170px;
+    }
+
+    .price {
+        font-size: calc(15px + 0.14vw);
     }
 }
