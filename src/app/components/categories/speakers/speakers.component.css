@@ -8,6 +8,11 @@
     text-align: center;
     width: 100vw; 
     height: 50vh;
+
+    background-image: url(~src/assets/images/speaker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ; 
+    background-position: center center;
 }
 
 img {
