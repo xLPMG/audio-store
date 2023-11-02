@@ -3,7 +3,7 @@
     width: 100vw;
     background-color: black;
 
-    background-image: url(/assets/images/pilots.jpg);
+    background-image: url(~src/assets/images/pilots.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     height: 100vh;

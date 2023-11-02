@@ -1,7 +1,7 @@
 <div class="container">
 <p class="title">Cart</p>
 <div class="cart-item" *ngFor="let item of items | keyvalue">
-    <img [src]="'/assets/images/products/'+item.key.id+'-1.png'" alt="image">
+    <img [src]="item.key.imagePath" alt="image">
     <span>{{ item.key.name }}</span>
     <span>{{ item.value }}</span>
     <span>{{ getTotalOfItem(item.key, item.value) | currency }}</span>

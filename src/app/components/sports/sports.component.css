@@ -3,7 +3,7 @@
     width: 100vw;
     background-color: black;
 
-    background-image: url(/assets/images/sports.jpg);
+    background-image: url(~src/assets/images/sports.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

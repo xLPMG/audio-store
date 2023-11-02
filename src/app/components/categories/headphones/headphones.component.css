@@ -16,7 +16,7 @@
     width: 100vw; 
     height: 60vh;
 
-    background-image: url(/assets/images/headphones.jpg);
+    background-image: url(~src/assets/images/headphones.jpg);
     background-repeat: no-repeat;
     background-size: cover ; 
     background-position: center center;

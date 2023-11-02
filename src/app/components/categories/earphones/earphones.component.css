@@ -8,7 +8,7 @@
     width: 100vw; 
     height: 50vh;
 
-    background-image: url(/assets/images/earphones.jpg);
+    background-image: url(~src/assets/images/earphones.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center center;
