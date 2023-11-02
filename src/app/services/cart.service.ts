@@ -8,22 +8,23 @@ export class CartService {
   items = new Map<Product, number>();
 
   addToCart(product: Product) {
-    if(this.items.has(product)){
-      let count = this.items.get(product);
-      if(count) this.items.set(product, count+1);
-    }else {
-      this.items.set(product, 1);
+    let containsItem = false;
+    for(let p of this.items){
+      if(product.id == p[0].id){
+        containsItem = true;
+        this.items.set(p[0], p[1]+1);
+        break;
+      }
     }
-    
+    if(!containsItem) this.items.set(product, 1);
   }
 
   removeFromCart(product: Product) {
-    if(this.items.has(product)){
-      let count = this.items.get(product);
-      if(count) {
-        count--;
-        if(count>0)this.items.set(product, count);
-        else this.items.delete(product);
+    for(let p of this.items){
+      if(product.id == p[0].id){
+        if(p[1]-1<=0) this.items.delete(p[0]);
+        else this.items.set(p[0],p[1]-1);
+        break;
       }
     }
   }

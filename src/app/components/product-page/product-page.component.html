@@ -1,13 +1,17 @@
 <div class="area">
-  <div class="container">
-    <div *ngIf="product | async as product">
-      <div class="description">
-        <p class="name">{{ product.name }}</p>
-        <p class="description" *ngIf="product.description">{{product.description}}</p>
-        <span class="price" *ngIf="product.price">{{ product.price | currency }}</span>
-        <button type="button" (click)="addToCart(product)"><mat-icon>add_shopping_cart</mat-icon></button>
-      </div>
-      <img [src]="product.imagePath" alt="image">
+  <div *ngIf="product | async as product">
+    <div class="image">
+      <img [src]="product.imagePath" alt="image" />
+    </div>
+    <div class="description">
+      <p class="name">{{ product.name }}</p>
+      <p class="description" *ngIf="product.description">
+        {{ product.description }}
+      </p>
+      <span class="price" *ngIf="product.price">{{
+        product.price | currency
+      }}</span>
+      <button type="button" (click)="addToCart(product)">Buy now</button>
     </div>
   </div>
 </div>
