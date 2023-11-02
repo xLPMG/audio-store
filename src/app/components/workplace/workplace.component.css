@@ -3,7 +3,7 @@
     width: 100vw;
     background-color: white;
 
-    background-image: url(/assets/images/workplace.jpg);
+    background-image: url(~src/assets/images/workplace.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center center;
