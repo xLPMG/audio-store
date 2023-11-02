@@ -14,8 +14,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { InfotabComponent } from './components/infotab/infotab.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { ProductListCarouselComponent } from './components/product-list-carousel/product-list-carousel.component';
 import { ProductPageComponent } from './components/product-page/product-page.component';
-import { CategoryPageComponent } from './components/category-page/category-page.component';
 import { CartComponent } from './components/cart/cart.component';
 import { AboutComponent } from './components/about/about.component';
 import { CreativityComponent } from './components/creativity/creativity.component';
@@ -28,6 +28,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HeadphonesComponent } from './components/categories/headphones/headphones.component';
 import { EarphonesComponent } from './components/categories/earphones/earphones.component';
 import { SpeakersComponent } from './components/categories/speakers/speakers.component';
+import { HomeTheaterComponent } from './components/categories/home-theater/home-theater.component';
 
 @NgModule({
   declarations: [
@@ -35,8 +36,8 @@ import { SpeakersComponent } from './components/categories/speakers/speakers.com
     HeaderComponent,
     InfotabComponent,
     ProductListComponent,
+    ProductListCarouselComponent,
     ProductPageComponent,
-    CategoryPageComponent,
     CartComponent,
     AboutComponent,
     CreativityComponent,
@@ -48,7 +49,8 @@ import { SpeakersComponent } from './components/categories/speakers/speakers.com
     ContactComponent,
     HeadphonesComponent,
     EarphonesComponent,
-    SpeakersComponent
+    SpeakersComponent,
+    HomeTheaterComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +62,7 @@ import { SpeakersComponent } from './components/categories/speakers/speakers.com
       { path: 'categories/headphones', component: HeadphonesComponent },
       { path: 'categories/earphones', component: EarphonesComponent },
       { path: 'categories/speakers', component: SpeakersComponent },
-      { path: 'categories/:category', component: CategoryPageComponent },
+      { path: 'categories/home-theater', component: HomeTheaterComponent },
 
       { path: 'cart', component: CartComponent },
     ]),

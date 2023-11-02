@@ -5,11 +5,11 @@ import { ProductsService } from 'src/app/services/products.service';
 import { Observable, of, map } from 'rxjs';
 
 @Component({
-  selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  selector: 'app-product-list-carousel',
+  templateUrl: './product-list-carousel.component.html',
+  styleUrls: ['./product-list-carousel.component.css']
 })
-export class ProductListComponent implements OnInit, OnChanges {
+export class ProductListCarouselComponent implements OnInit, OnChanges {
   @Input() categories: string[] | null | undefined = null;
   @Input() shouldScroll: string | null | undefined = null;
 

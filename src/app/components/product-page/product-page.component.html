@@ -7,7 +7,7 @@
         <span class="price" *ngIf="product.price">{{ product.price | currency }}</span>
         <button type="button" (click)="addToCart(product)"><mat-icon>add_shopping_cart</mat-icon></button>
       </div>
-      <img [src]="'/assets/images/products/'+product.id+'-1.png'" alt="image">
+      <img [src]="product.imagePath" alt="image">
     </div>
   </div>
 </div>

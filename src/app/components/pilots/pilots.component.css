@@ -11,26 +11,28 @@
 }
 
 .textbox {
-    color: black;
+    position: absolute;
+    color: var(--text-white);;
+    background-color: rgba(0, 0, 0, 0.7);
 
-    margin-left: 20vw;
+    margin-left: auto;
     margin-right: auto;
-    padding-top: 20vh;
+    margin-top: 20vh;
 
     height: auto;
-    width: 25%;
+    width: 100%;
 }
 
 .title {
     text-align: center;
     padding: 1vw;
     font-weight: 900;
-    font-size: calc(12px + 1.8vw);
+    font-size: calc(18px + 1.8vw);
 }
 
 .subtext {
     text-align: center;
-    font-size: calc(10px + 1vw);
+    font-size: calc(12px + 1vw);
     padding: 1vw;
     padding-top: 0;
     font-weight: 500;
@@ -38,7 +40,7 @@
 
 a {
     text-decoration: none;
-    color: var(--text-black);
+    color: var(--text-white);
     font-weight: bold;
 }
 

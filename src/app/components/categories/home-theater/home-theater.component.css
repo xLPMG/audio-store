@@ -4,29 +4,32 @@
 }
 
 .header {
+    position: relative;
     text-align: center;
     width: 100vw; 
     height: 50vh;
-
-    background-image: url(/assets/images/earphones.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center center;
 }
 
-
+img {
+    width: 100vw; 
+    height: 50vh;
+    object-fit: cover;
+}
 
 .title {
-    position: center;
+    position: absolute;
+    left: 10vw;
+    top: 20vh;
     color: black;
-    padding-top: 20vh;
-    
+
     font-weight: 900;
     font-size: calc(12px + 1.8vw);
 }
 
 .subtitle {
-    position: center;
+    position: absolute;
+    top: 20vh;
+    right: 10vw;
     color: black;
 
     font-size: calc(10px + 1vw);

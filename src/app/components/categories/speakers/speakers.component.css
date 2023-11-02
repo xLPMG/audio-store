@@ -22,8 +22,10 @@ img {
     top: 20vh;
     color: black;
 
+    text-align: left;
+
     font-weight: 900;
-    font-size: calc(12px + 1.8vw);
+    font-size: calc(12px + 2vw);
 }
 
 .subtitle {
@@ -32,6 +34,39 @@ img {
     right: 10vw;
     color: black;
 
-    font-size: calc(10px + 1vw);
+    text-align: right;
+
+    font-size: calc(10px + 1.2vw);
     font-weight: 700;
 }
+
+@media only screen and (max-width: 700px) {
+    .title {
+        position: absolute;
+        top: 7vh;
+        right: auto;
+        left: auto;
+        width: 100%;
+        color: black;
+    
+        text-align: center;
+
+        font-weight: 900;
+        font-size: calc(24px + 3vw);
+    }
+    
+    .subtitle {
+        position: absolute;
+        top:auto;
+        bottom: 10px;
+        right: auto;
+        left: auto;
+        width: 100%;
+        color: black;
+    
+        text-align: center;
+
+        font-size: calc(14px + 2vw);
+        font-weight: 700;
+    }
+  }

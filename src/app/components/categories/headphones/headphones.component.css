@@ -8,7 +8,6 @@
     height: 100%;
     margin-left: auto; 
     margin-right: 0;
-
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -24,19 +23,22 @@
 }
 
 .title {
-    text-align: right;
+    text-align: center;
     color: white;
-    padding-top: 10vh;
     padding-right: 5vw;
+    padding-left: 5vw;
+    padding-top: 10vh;
 
     font-weight: 900;
     font-size: calc(12px + 1.8vw);
 }
 
 .subtitle {
-    text-align: right;
+    text-align: center;
     color: white;
+    padding-top: 5vh;
     padding-right: 5vw;
+    padding-left: 5vw;
 
     font-size: calc(10px + 1vw);
     font-weight: 700;

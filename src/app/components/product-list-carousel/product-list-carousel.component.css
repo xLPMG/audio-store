@@ -4,7 +4,23 @@
     margin-top: 10px;
     margin-bottom: 3vh;
     width: 80vw;
-    flex-wrap: wrap;
+
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    /* snap */
+    -ms-scroll-snap-destination: 0 0;
+    scroll-snap-destination: 0 0;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+}
+
+.productList::-webkit-scrollbar {
+    display: none;
+}
+.productList {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
 }
 
 .title {
@@ -28,6 +44,9 @@
 
     border-radius: 15px;
     box-shadow: 0 4px 6px 2px #ccc;
+
+    scroll-margin: 1;
+    scroll-snap-stop: always;
 }
 
 .name {

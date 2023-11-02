@@ -6,15 +6,17 @@
             <a [routerLink]="['categories/headphones']">headphones</a>
             <a [routerLink]="['categories/earphones']">earphones</a>
             <a [routerLink]="['categories/speakers']">speakers</a>
+            <a [routerLink]="['categories/home-theater']">home theater</a>
             <a href="#">contact</a>
         </div>
         <a [routerLink]="['/cart']" class="cart"><mat-icon>shopping_cart</mat-icon></a>
     </div>
     <div class="dropdown-menu">
         <div class="space"></div>
-        <a [routerLink]="['categories/headphones']">headphones</a>
-        <a [routerLink]="['categories/earphones']">earphones</a>
-        <a [routerLink]="['categories/speakers']">speakers</a>
+        <a [routerLink]="['categories/headphones']" (click)='openDropDown()'>headphones</a>
+        <a [routerLink]="['categories/earphones']" (click)='openDropDown()'>earphones</a>
+        <a [routerLink]="['categories/speakers']" (click)='openDropDown()'>speakers</a>
+        <a [routerLink]="['categories/home-theater']" (click)='openDropDown()'>home theater</a>
         <a href="#">contact</a>
     </div>
 </body>
