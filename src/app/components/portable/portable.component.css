@@ -12,7 +12,7 @@ img {
 }
 
 .textbox {
-    color: white;
+    color: var(--text-white);
     margin: auto;
     width: 50%;
 }

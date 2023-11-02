@@ -8,30 +8,26 @@
     text-align: center;
     width: 100vw; 
     height: 50vh;
-}
 
-img {
-    width: 100vw; 
-    height: 50vh;
-    object-fit: cover;
+    background-image: url(~src/assets/images/cinema.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
 }
 
 .title {
-    position: absolute;
-    left: 10vw;
-    top: 20vh;
-    color: black;
+    position: relative;
+    padding-top: 10vh;
+    color: var(--text-white);
 
     font-weight: 900;
-    font-size: calc(12px + 1.8vw);
+    font-size: calc(16px + 1.8vw);
 }
 
 .subtitle {
-    position: absolute;
-    top: 20vh;
-    right: 10vw;
-    color: black;
+    position: relative;
+    color: var(--text-white);
 
-    font-size: calc(10px + 1vw);
+    font-size: calc(14px + 1vw);
     font-weight: 700;
 }

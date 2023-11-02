@@ -8,7 +8,4 @@
 - Headphones: https://unsplash.com/de/fotos/mann-in-schwarzer-anzugjacke-mit-schwarzen-kopfhorern-4knC1Bay1HI
 - Earphones: https://unsplash.com/de/fotos/eine-person-die-ein-weisses-gerat-in-den-handen-halt-X_xwyofgXNY
 - Speakers: https://unsplash.com/de/fotos/ein-schwarzer-lautsprecher-der-auf-einem-weissen-tisch-sitzt-ZVh0_n2TL5g
-
-
-<h1>Products</h1>
-https://www.pngall.com/bose-speaker-png/
+- Home Theater; https://unsplash.com/de/fotos/%EB%B9%A8%EA%B0%84-%EC%98%81%ED%99%94%EA%B4%80-%EC%9D%98%EC%9E%90-evlkOfkQ5rE

@@ -195,6 +195,15 @@ export class InMemoryDataService {
         category: ['speaker','surround'],
         description: '',
         imagePath: 'https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/bose_surround_speakers_700/product_silo_image/bose_surround_speakers_700_black_EC_hero.psd/jcr:content/renditions/cq5dam.web.1000.1000.png'
+      },
+      {
+        id: 22,
+        name: 'Bose Music Amplifier ',
+        brand: 'Bose',
+        price: '704.95',
+        category: ['amplifier'],
+        description: '',
+        imagePath: 'https://assets.bose.com/content/dam/cloudassets/Bose_DAM/Web/consumer_electronics/global/products/speakers/bose-music-amplifier/product-silo/CTP-37333_PDP_ECOM_BMA_3.jpg/jcr:content/renditions/cq5dam.web.1000.1000.jpeg'
       }
       ];
     return {products};

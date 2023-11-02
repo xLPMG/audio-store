@@ -52,7 +52,7 @@ img {
         right: auto;
         left: auto;
         width: 100%;
-        color: black;
+        color: var(--text-black);
     
         text-align: center;
 
@@ -67,7 +67,7 @@ img {
         right: auto;
         left: auto;
         width: 100%;
-        color: black;
+        color: var(--text-black);
     
         text-align: center;
 
