@@ -9,7 +9,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .container {background-image: url(~src/assets/images/sports_500.jpg);}
+    .container {background-image: url(~src/assets/images/sports_1000.jpg);}
 }
 @media only screen and (min-width: 501px) and (max-width: 1000px) {
     .container {background-image: url(~src/assets/images/sports_1000.jpg);}
