@@ -27,7 +27,7 @@ export class InMemoryDataService {
       },
       {
         id: 3,
-        name: 'Bose QuietComfort Ultra Kopfhörer',
+        name: 'Bose QuietComfort Ultra Headphones',
         brand: 'Bose',
         price: 499.95,
         category: ['headphone','bluetooth','noise-cancelling','new'],
@@ -45,7 +45,7 @@ export class InMemoryDataService {
       },
       {
         id: 5,
-        name: 'Bose QuietComfort 45 Headphones ',
+        name: 'Bose QuietComfort 45 Headphones',
         brand: 'Bose',
         price: 349.95,
         category: ['headphone','bluetooth','noise-cancelling'],
@@ -54,7 +54,7 @@ export class InMemoryDataService {
       },
       {
         id: 6,
-        name: 'Bose QuietComfort SE headphones',
+        name: 'Bose QuietComfort SE Headphones',
         brand: 'Bose',
         price: 244.95,
         category: ['headphone','bluetooth','noise-cancelling'],
@@ -126,7 +126,7 @@ export class InMemoryDataService {
       },
       {
         id: 14,
-        name: 'Companion 2 Series III multimedia speaker system',
+        name: 'Companion 2 Series III Multimedia Speaker System',
         brand: 'Bose',
         price: '149.95',
         category: ['speaker','computer'],
@@ -198,7 +198,7 @@ export class InMemoryDataService {
       },
       {
         id: 22,
-        name: 'Bose Music Amplifier ',
+        name: 'Bose Music Amplifier',
         brand: 'Bose',
         price: '704.95',
         category: ['amplifier'],

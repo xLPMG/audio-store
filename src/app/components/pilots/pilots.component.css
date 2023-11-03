@@ -3,11 +3,17 @@
     width: 100vw;
     background-color: black;
 
-    background-image: url(~src/assets/images/pilots.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     height: 100vh;
     background-position: right center;
+}
+
+@media only screen and (max-width: 500px) {
+    .header {background-image: url(~src/assets/images/pilots_low.jpg);}
+}
+@media only screen and (min-width: 500px) {
+    .header {background-image: url(~src/assets/images/pilots.jpg);}
 }
 
 .textbox {

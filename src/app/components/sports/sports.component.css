@@ -3,11 +3,16 @@
     width: 100vw;
     background-color: black;
 
-    background-image: url(~src/assets/images/sports.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
 
+@media only screen and (max-width: 500px) {
+    .header {background-image: url(~src/assets/images/sports_low.jpg);}
+}
+@media only screen and (min-width: 500px) {
+    .header {background-image: url(~src/assets/images/sports.jpg);}
 }
 
 .textbox {

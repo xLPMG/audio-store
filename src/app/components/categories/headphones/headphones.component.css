@@ -16,10 +16,16 @@
     width: 100vw; 
     height: 60vh;
 
-    background-image: url(~src/assets/images/headphones.jpg);
     background-repeat: no-repeat;
     background-size: cover ; 
     background-position: center center;
+}
+
+@media only screen and (max-width: 500px) {
+    .header {background-image: url(~src/assets/images/headphones_low.jpg);}
+}
+@media only screen and (min-width: 500px) {
+    .header {background-image: url(~src/assets/images/headphones.jpg);}
 }
 
 .title {
