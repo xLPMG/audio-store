@@ -25,7 +25,7 @@
     .header {background-image: url(~src/assets/images/headphones_1000.jpg);}
 }
 @media only screen and (min-width: 501px) and (max-width: 1000px) {
-    .header {background-image: url(~src/assets/images/headphones_1000.jpg);}
+    .header {background-image: url(~src/assets/images/headphones_2000.jpg);}
 }
 @media only screen and (min-width: 1001px) {
     .header {background-image: url(~src/assets/images/headphones.jpg);}

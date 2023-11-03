@@ -1,7 +1,7 @@
 <body>
     <div class="navbar">
         <div class="toggle_btn" (click)='openDropDown()'><mat-icon>menu</mat-icon></div>
-        <a [routerLink]="['/']" class="logo"> <mat-icon>hearing</mat-icon> </a>
+        <a [routerLink]="['/']" class="logo" (click)='closeDropDown()'> <mat-icon>hearing</mat-icon> </a>
         <div class="nav-links">
             <a [routerLink]="['categories/headphones']">headphones</a>
             <a [routerLink]="['categories/earphones']">earphones</a>
@@ -13,10 +13,10 @@
     </div>
     <div class="dropdown-menu">
         <div class="space"></div>
-        <a [routerLink]="['categories/headphones']" (click)='openDropDown()'>headphones</a>
-        <a [routerLink]="['categories/earphones']" (click)='openDropDown()'>earphones</a>
-        <a [routerLink]="['categories/speakers']" (click)='openDropDown()'>speakers</a>
-        <a [routerLink]="['categories/home-theater']" (click)='openDropDown()'>home theater</a>
+        <a [routerLink]="['categories/headphones']" (click)='closeDropDown()'>headphones</a>
+        <a [routerLink]="['categories/earphones']" (click)='closeDropDown()'>earphones</a>
+        <a [routerLink]="['categories/speakers']" (click)='closeDropDown()'>speakers</a>
+        <a [routerLink]="['categories/home-theater']" (click)='closeDropDown()'>home theater</a>
         <a href="#">contact</a>
     </div>
 </body>

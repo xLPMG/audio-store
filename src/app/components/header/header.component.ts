@@ -19,4 +19,15 @@ if(dropDownMenu){
     toggleBtnIcon.innerHTML = isOpen ? 'close' : 'menu';
   }
  }}
+
+ public closeDropDown(): void {
+  const toggleBtnIcon = document.querySelector('.toggle_btn mat-icon');
+  const dropDownMenu = document.querySelector('.dropdown-menu');
+  if(dropDownMenu){
+    dropDownMenu.classList.remove('open');
+  }
+  if(toggleBtnIcon){
+    toggleBtnIcon.innerHTML = 'menu';
+  }
+ }
 }

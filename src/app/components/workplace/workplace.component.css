@@ -9,16 +9,16 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .container {background-image: url(~src/assets/images/workplace_1000.jpg);}
+    .container {background-image: url(~src/assets/images/workplace_2000.jpg);}
 }
 @media only screen and (min-width: 501px) and (max-width: 1000px) {
-    .container {background-image: url(~src/assets/images/workplace_1000.jpg);}
+    .container {background-image: url(~src/assets/images/workplace_2000.jpg);}
 }
 @media only screen and (min-width: 1001px) {
     .container {background-image: url(~src/assets/images/workplace.jpg);}
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 701px) {
     .textbox {
         color: black;
     
@@ -50,10 +50,40 @@
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 501px) and (max-width: 700px) {
     .textbox {
         color: black;
-        width: 100%;
+        width: 50vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .title {
+        text-align: center;
+        padding: 1vw;
+        font-weight: 900;
+        font-size: calc(24px + 1.8vw);
+    
+    
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    .subtext {
+        text-align: center;
+        font-size: calc(18px + 1vw);
+        padding: 1vw;
+        padding-top: 0;
+        font-weight: 500;
+        border-radius: 0px 0px 5px 5px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .textbox {
+        color: black;
+        width: 80vw;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .title {
