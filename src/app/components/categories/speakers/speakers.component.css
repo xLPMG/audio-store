@@ -15,9 +15,12 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .header {background-image: url(~src/assets/images/speaker_low.jpg);}
+    .header {background-image: url(~src/assets/images/speaker_500.jpg);}
 }
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
+    .header {background-image: url(~src/assets/images/speaker_1000.jpg);}
+}
+@media only screen and (min-width: 1001px) {
     .header {background-image: url(~src/assets/images/speaker.jpg);}
 }
 
@@ -54,7 +57,7 @@ img {
 @media only screen and (max-width: 700px) {
     .title {
         position: absolute;
-        top: 7vh;
+        top: 6vh;
         right: auto;
         left: auto;
         width: 100%;
@@ -69,7 +72,7 @@ img {
     .subtitle {
         position: absolute;
         top:auto;
-        bottom: 10px;
+        bottom: 8px;
         right: auto;
         left: auto;
         width: 100%;

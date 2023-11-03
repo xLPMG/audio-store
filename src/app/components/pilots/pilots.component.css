@@ -10,10 +10,13 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .header {background-image: url(~src/assets/images/pilots_low.jpg);}
+    .container {background-image: url(~src/assets/images/pilots_500.jpg);}
 }
-@media only screen and (min-width: 500px) {
-    .header {background-image: url(~src/assets/images/pilots.jpg);}
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
+    .container {background-image: url(~src/assets/images/pilots_1000.jpg);}
+}
+@media only screen and (min-width: 1001px) {
+    .container {background-image: url(~src/assets/images/pilots.jpg);}
 }
 
 .textbox {
