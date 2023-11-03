@@ -21,16 +21,20 @@ export class ProductListComponent implements OnInit, OnChanges {
   ngOnInit(): void {
     this.productList = this.productsService.getProducts();
     this.ngOnChanges();
+    this.setProducts();
   }
 
   ngOnChanges(): void {
+  }
+
+  setProducts(): void {
     if(this.productList){
+      this.products = this.productList;
     if(this.categories){
       for(var category of this.categories){
-        this.products = this.productList.pipe(map((products: Product[]) => products.filter((p) => p.category.some(i => { return (i === category) ? true : false;}))));
+        this.products = this.products.pipe(map((products: Product[]) => products.filter((p) => p.category.some(i => i === category))));
+        //this.products = this.products.pipe(map((products: Product[]) => products.filter((p) => p.category.includes(category))));
       }
-    } else {
-      this.products = this.productList;
     }
   }
   }

@@ -1,14 +1,19 @@
 <div class="container">
-<p class="title">Cart</p>
+<div class="title">Cart</div>
+
 <div class="cart-item" *ngFor="let item of items | keyvalue">
-    <img [src]="item.key.imagePath" alt="image">
-    <span>{{ item.key.name }}</span>
-    <span>{{ item.value }}</span>
-    <span>{{ getTotalOfItem(item.key, item.value) | currency }}</span>
-    <div class="buttons">
-        <button (click)="increaseItem(item.key)"><mat-icon>add</mat-icon></button>
-        <button (click)="decreaseItem(item.key)"><mat-icon>remove</mat-icon></button>
+    <div class="image">
+        <img [src]="item.key.imagePath" alt="image">
+    </div>
+    <div class="itemdata">
+        <div class="name">{{ item.key.name }}</div>
+        <div class="quantity">Quantity: {{ item.value }}</div>
+        <div class="buttons">
+            <button (click)="increaseItem(item.key)">+</button>
+            <button (click)="decreaseItem(item.key)">-</button>
+        </div>
+        <div class="interim">Price: {{ getTotalOfItem(item.key, item.value) | currency }}</div>
     </div>
 </div>
-<p class="total">Total: {{getTotal() | currency}}</p>
+<div class="total">Total: {{getTotal() | currency}}</div>
 </div>
