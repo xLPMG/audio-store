@@ -2,36 +2,41 @@ import { Component, Input, OnInit, OnChanges  } from '@angular/core';
 
 import { Product } from '../../data/product';
 import { ProductsService } from 'src/app/services/products.service';
-import { Observable, of, map } from 'rxjs';
 
 @Component({
   selector: 'app-product-list-carousel',
   templateUrl: './product-list-carousel.component.html',
   styleUrls: ['./product-list-carousel.component.css']
 })
-export class ProductListCarouselComponent implements OnInit, OnChanges {
+export class ProductListCarouselComponent implements OnInit {
   @Input() categories: string[] | null | undefined = null;
   @Input() shouldScroll: string | null | undefined = null;
 
-  constructor(private productsService: ProductsService){}
+  constructor(private productsService: ProductsService) { }
 
-  products: Observable<Product[]> | undefined;
-  productList: Observable<Product[]> | undefined;
+  products: Product[] | undefined;
+  productList: Product[] | undefined;
 
   ngOnInit(): void {
-    this.productList = this.productsService.getProducts();
-    this.ngOnChanges();
+    this.loadProducts();
   }
 
-  ngOnChanges(): void {
-    if(this.productList){
-    if(this.categories){
-      for(var category of this.categories){
-        this.products = this.productList.pipe(map((products: Product[]) => products.filter((p) => p.category.some(i => { return (i === category) ? true : false;}))));
-      }
-    } else {
-      this.products = this.productList;
-    }
+  loadProducts(): void {
+    this.productsService.getProducts()
+      .subscribe({
+        next: (products: Product[]) => { this.productList = products },
+        complete: () => this.filterProducts()
+      });
   }
+
+  filterProducts(): void {
+    if (this.productList) {
+      this.products = this.productList;
+      if (this.categories) {
+        for (let category of this.categories) {
+          this.products = this.products.filter((p) => p.category.includes(category));
+        }
+      }
+    }
   }
 }

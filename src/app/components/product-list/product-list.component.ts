@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnChanges  } from '@angular/core';
+import { Component, Input, OnInit, OnChanges } from '@angular/core';
 
 import { Product } from '../../data/product';
 import { ProductsService } from 'src/app/services/products.service';
@@ -9,33 +9,35 @@ import { Observable, of, map } from 'rxjs';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent implements OnInit, OnChanges {
+export class ProductListComponent implements OnInit {
   @Input() categories: string[] | null | undefined = null;
   @Input() shouldScroll: string | null | undefined = null;
 
-  constructor(private productsService: ProductsService){}
+  constructor(private productsService: ProductsService) { }
 
-  products: Observable<Product[]> | undefined;
-  productList: Observable<Product[]> | undefined;
+  products: Product[] | undefined;
+  productList: Product[] | undefined;
 
   ngOnInit(): void {
-    this.productList = this.productsService.getProducts();
-    this.ngOnChanges();
-    this.setProducts();
+    this.loadProducts();
   }
 
-  ngOnChanges(): void {
+  loadProducts(): void {
+    this.productsService.getProducts()
+      .subscribe({
+        next: (products: Product[]) => { this.productList = products },
+        complete: () => this.filterProducts()
+      });
   }
 
-  setProducts(): void {
-    if(this.productList){
+  filterProducts(): void {
+    if (this.productList) {
       this.products = this.productList;
-    if(this.categories){
-      for(var category of this.categories){
-        this.products = this.products.pipe(map((products: Product[]) => products.filter((p) => p.category.some(i => i === category))));
-        //this.products = this.products.pipe(map((products: Product[]) => products.filter((p) => p.category.includes(category))));
+      if (this.categories) {
+        for (let category of this.categories) {
+          this.products = this.products.filter((p) => p.category.includes(category));
+        }
       }
     }
-  }
   }
 }
