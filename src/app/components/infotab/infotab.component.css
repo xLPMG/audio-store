@@ -41,7 +41,7 @@ body {
 .waviy span {
     position: relative;
     display: inline-block;
-    font-size: calc(26px + 6vw);
+    font-size: calc(16px + 6vw);
     color: black;
     text-transform: uppercase;
     animation: flip 4s infinite;
