@@ -1,6 +1,8 @@
 # AudioStore
 
-Check out the [finished web shop](https://xlpmg.github.io/audio-store/)
+AudioStore is a fake web shop for audio products. "Fake" meaning that you can not actually buy any product you see on there. Since I am a fan of Bose, I only added their products. There is no other reason for this choice and I am in no way affiliated with Bose. 
+
+You can check out the latest build [here](https://xlpmg.github.io/audio-store/).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
 
